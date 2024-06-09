@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+.header-content .contenido{
+    max-width: 100%;
+   
+}
+
+.container .logo img{
+    margin: 1em;
+    height: 100px;
+}
+.container .logo h1{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-style: italic; 
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.logo{
+    background-color: aliceblue;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu{
+    position: sticky;
+    top: 0;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.menu ul li{
+    margin: 0.5rem 1rem;
+}
+
+.menu ul li a{
+    color: black;
+    font-family: "Work Sans",
+        sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+   background-color: #443E37;
+   color: #FFFF;
+   border-radius: 0.25em;
+   padding: 0.25em;
+}
+
+#label i {
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+
+.container #label{
+    cursor: pointer;
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+
+
+.main-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 1rem auto;
+}
+
+.pregunta {
+    margin: 10px auto;
+    max-width: 500px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.pregunta_encabezado h3 {
+    font-family: "Work Sans",
+        sans-serif;
+    font-weight: 500;
+    color: #5F5A54;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.respuesta {
+    font-family: "Work Sans",
+        sans-serif;
+    font-weight: 400;
+    height: 0;
+    opacity: 0;
+}
+
+.respuesta.activo {
+    height: auto;
+    opacity: 1;
+}
+.redes i {
+    color: aqua;
+    font-size: 1.8em;
+    margin-right: 1em;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.redes i:hover {
+    color: burlywood;
+}
+
+footer h2{
+    font-family: "Work Sans",
+        sans-serif;
+        font-size: 30px;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+}
+
+
+
+

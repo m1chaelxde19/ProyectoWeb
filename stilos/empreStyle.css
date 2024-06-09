@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/*------------------HEADER-----------------------------*/
+.header {
+  background-color: #665d5e;
+  min-height: 30vh;
+  width: 100%;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+.header .h1 {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header .h1 img {
+  width: 6em;
+  height: 6em;
+}
+
+.h1 h1 {
+  font-family: "Source Sans 3", sans-serif;
+  margin: auto 0;
+}
+
+.h1 h1,
+img {
+  display: inline-block;
+}
+
+.header .nav {
+  margin: 1rem auto;
+  max-width: 80%;
+}
+
+.header-content .nav ul {
+  list-style: none;
+}
+
+.header-content .nav ul li {
+  position: relative;
+  float: left;
+  margin: 0 0.25rem;
+  padding: 0 1em;
+  justify-content: space-between;
+}
+
+.header-content .nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Source Sans 3", sans-serif;
+  display: block;
+}
+
+.header-content .nav ul li a:hover {
+  padding: 0.2rem;
+  background-color: #343232;
+  border-radius: 0.25em;
+}
+
+#label i {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.header-content #label {
+  cursor: pointer;
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+/*-----------------------------------------MAIN-----------------------------------*/
+main {
+  padding: 2.5em;
+  display: flex;
+  align-items: column;
+}
+
+.section {
+  height: 100%;
+}
+
+section .imagen {
+  width: 15em;
+  height: 15em;
+}
+
+section .imgs {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .imgs .img {
+  width: 10em;
+  height: 10em;
+}
+
+.section h3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: black;
+}
+
+.section p {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.section ul {
+  margin: 0 0 0 2em;
+}
+
+.section ul li {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.section article {
+  margin-bottom: 0.25em;
+  padding: 1em;
+  background-color: aliceblue;
+  width: 90%;
+}
+
+.aside {
+  width: 50%;
+  height: 200vh;
+}
+
+.aside {
+  padding: 2em;
+  background: #e4e4e4;
+}
+
+.aside h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 19px;
+  margin: 1rem auto;
+}
+
+.aside a {
+  text-decoration: none;
+}
+
+aside i {
+  color: #1e3674;
+  font-size: 2em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.aside i:hover {
+  color: #dc9d1f;
+}
+
+footer {
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .nav {
+    padding: 30px;
+  }
+
+  .header-content #label {
+    display: initial;
+  }
+
+  .header .nav-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(5px);
+    background-color: #3f3f3f48;
+    display: none;
+  }
+
+  .header-content .nav ul li a {
+    width: 100%;
+    font-size: 18px;
+    color: black;
+  }
+
+  #menu:checked ~ .nav-content {
+    display: initial;
+  }
+
+  main {
+    display: block;
+  }
+
+  .section h3 {
+    font-size: 20px;
+    color: black;
+  }
+
+  .section p {
+    font-size: 15px;
+  }
+
+  .section ul li {
+    font-size: 15px;
+  }
+
+  aside h3 {
+   font-size: 15px;
+  }
+
+  aside {
+      width: 100%;
+  }
+
+  aside i {
+      color: #1e3674;
+      font-size: 1em;
+      margin-right: 1em;
+      cursor: pointer;
+  }
+}
