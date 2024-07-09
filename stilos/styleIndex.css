@@ -1,140 +1,67 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+nav {
+    background-color: #873600;
 }
 
-body {
-    font-family: "Roboto Flex",
-        sans-serif;
-    font-size: 1.2em;
-    line-height: 1.8em;
+.navbar .container .btn-personal {
+    background-color: white;
+    color: #17202A;
 }
 
-p{
-    font-size: 1.2em;
-    margin-bottom: 1.6em;
+.imgPersonal {
+    width: 900px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 165px;
 }
 
-img{
-    width: 5em;
-    height: 5em;
-}
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header {
-    background-image: url(../img/fondo2.png);
-    background-position: center center;
-    background-repeat:  no-repeat;
-    background-size: cover;
-    display: flex;
-    position: relative;
-    min-height: 100vh;
-    align-items: center;
-    
-}
-
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo{
-    color: #FFFFFF;
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-.menu .menu-navegation ul li{
-    position: relative;
-    float: left;
-}
-
-.menu .menu-navegation ul li a{
-    font-size: 1em;
-    padding: 0.70em;
-    color: #FFFFFF;
-    display: block;
-    font-weight: bold;
-}
-
-.menu .menu-navegation ul li a:hover{
-    background-color: #FFFFFF;
+.carrusel>.preve,
+.sigue {
     color: black;
-    border-radius: 0.25em;
 }
 
-main{
-    padding: 2rem;
+.navbar .container #lits_navegation a {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0.50em;
+    padding-left: 0.25em;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-section{
-    margin-bottom: 2rem;
+.navbar .container #lits_navegation a:hover {
+    border-radius: 5px;
+    background-color: #17202A;
+    animation: 3ms;
 }
 
-section p{
-    font-family: "Roboto Flex",
-        sans-serif;
+.principal {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: justify;
 }
 
-#label i{
-    color: #FFFFFF;
-    font-size: 1.5em;
+.principal .container .row .contenido {
+    padding: 1em;
+    background-color: aliceblue;
+    margin-top: 1em;
 }
 
-.menu #label{
-    cursor: pointer;
-    display: none;
-}
 
-#menu{
-    display: none;
-}
-
-.container-header_text{
-    width: 65%;
-    margin: 5em 0.85em 0.85em 0.85em;
-}
-
-.container-header_text h2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2em;
-    line-height: 80px;
-    font-weight: 700;
-    text-decoration: uppercase;
-    color: #FFFFFF;
-    margin-bottom: 0.25empx;
-}
-
-.container-header_text p{
-    font-family: "Roboto Flex",
-        sans-serif;
-    font-size: 1em;
-    color: #FFFFFF;
-    font-weight: 500;
-    margin-bottom: 0.25em;
-}
-
-.iconosRedes i{
+.iconosRedes i {
     color: aqua;
     font-size: 1.5em;
     margin-right: 1em;
     cursor: pointer;
 }
 
-.iconosRedes i:hover{
+.iconosRedes i:hover {
     color: burlywood;
 }
 
@@ -146,58 +73,4 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
-}
-
-@media(max-width:991px){
-    .menu{
-        padding: 30px;
-    }
-
-    img{
-        width: 2.5em;
-        height: 2.5em;
-    }
-
-    .menu #label{
-        display: initial;
-    }
-
-    .menu .menu-navegation{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        backdrop-filter: blur(5px);
-        background-color: #3F3F3F48;
-        display: none;
-    }
-
-    .menu .menu-navegation ul li{
-         width: 100%;
-    }
-
-    #menu:checked~.menu-navegation{
-        display: initial;
-    }
-
-    .iconosRedescription{
-        display: none;
-    }
-
-    .header{
-        padding: 80px 30px 50px 30px;
-        align-items: self-start;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container-header_text{
-        text-align: center;
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .container-header_text h2{
-        margin-bottom: 10px;
-    }
 }

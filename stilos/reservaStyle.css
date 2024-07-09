@@ -1,3 +1,48 @@
+nav {
+    background-color: #873600;
+}
+
+.navbar .container .btn-personal {
+    background-color: white;
+    color: #17202A;
+}
+
+.imgPersonal {
+    width: 900px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 165px;
+}
+
+.navbar .container #lits_navegation a {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0.50em;
+    padding-left: 0.25em;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar .container #lits_navegation a:hover {
+    border-radius: 5px;
+    background-color: #17202A;
+    animation: 3ms;
+}
+
+.img-custom {
+    max-width: 200px;
+    height: auto;
+}
+
+.imgPersonal {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
 * {
     margin: 0;
     padding: 0;
